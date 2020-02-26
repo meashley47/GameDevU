@@ -230,6 +230,8 @@ GameObject:
   - component: {fileID: 481381659}
   - component: {fileID: 481381658}
   - component: {fileID: 481381657}
+  - component: {fileID: 481381660}
+  - component: {fileID: 481381661}
   m_Layer: 5
   m_Name: Phone Button
   m_TagString: Untagged
@@ -296,7 +298,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539007944}
+      - m_Target: {fileID: 481381660}
         m_MethodName: IconClicked
         m_Mode: 1
         m_Arguments:
@@ -346,6 +348,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481381655}
   m_CullTransparentMesh: 0
+--- !u!114 &481381660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481381655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec6193d693944151a9cb2ec52734c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phone: {fileID: 173878102}
+  blur: {fileID: 470064833}
+  redPhone: {fileID: 21300000, guid: a5a12833cb4f5436a913dc6c13e2e640, type: 3}
+  greenPhone: {fileID: 21300000, guid: 4a623bf6d2d8b43a1874fea8763fa9b9, type: 3}
+--- !u!95 &481381661
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481381655}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5fe19f791a31241a1a95dfafc42ce6ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +476,6 @@ GameObject:
   - component: {fileID: 539007943}
   - component: {fileID: 539007942}
   - component: {fileID: 539007941}
-  - component: {fileID: 539007944}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -495,23 +531,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &539007944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 539007940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec6193d693944151a9cb2ec52734c4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phone: {fileID: 173878102}
-  blur: {fileID: 470064833}
-  redPhone: {fileID: 21300000, guid: 18fbca02fb6c94a7dbeb6d9c5324a922, type: 3}
-  greenPhone: {fileID: 21300000, guid: 4a623bf6d2d8b43a1874fea8763fa9b9, type: 3}
-  phoneButton: {fileID: 481381657}
 --- !u!1 &548673772
 GameObject:
   m_ObjectHideFlags: 0
