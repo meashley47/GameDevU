@@ -33,9 +33,6 @@ public class PhoneButton : MonoBehaviour
             button.image.sprite = greenPhone;
             blur.SetActive(false);
             phone.SetActive(false);
-
-            //Temporary, just to remind us the phone can ring
-            PhoneIsRinging(true);
         }
 
         //Opening the phone UI
@@ -44,12 +41,21 @@ public class PhoneButton : MonoBehaviour
             button.image.sprite = redPhone;
             blur.SetActive(true);
             phone.SetActive(true);
-            PhoneIsRinging(false);
+            TogglePhoneRinging(false);
         }
     }
 
-    public void PhoneIsRinging(bool ringing)
+    public void TogglePhoneRinging(bool ringing)
     {
-        animator.SetBool("ringing", ringing);
+        animator.SetBool("Ringing", ringing);
+    }
+
+    public void RingPhone()
+    {
+        //Only ring the phone if the phone interface isn't open
+        if (button.image.sprite == greenPhone)
+        {
+            TogglePhoneRinging(true);
+        }
     }
 }
