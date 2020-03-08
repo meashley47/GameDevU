@@ -3,7 +3,11 @@ guid: 5ec6193d693944151a9cb2ec52734c4c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - phone: {instanceID: 0}
+  - blur: {instanceID: 0}
+  - redPhone: {fileID: 21300000, guid: a5a12833cb4f5436a913dc6c13e2e640, type: 3}
+  - greenPhone: {fileID: 21300000, guid: 4a623bf6d2d8b43a1874fea8763fa9b9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
